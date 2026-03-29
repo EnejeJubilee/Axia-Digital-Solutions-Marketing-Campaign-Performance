@@ -2,59 +2,75 @@
 An end-to-end Power BI project showcasing marketing campaign performance analysis for Axia Digital Solutions, with interactive dashboards and data-driven insights
 
 
-INTRODUCTION
-This report presents the development of a Power BI dashboard that was made to monitor and analyse digital marketing campaigns across different channels, including Email, Instagram Ads, and Influencer Marketing. 
-This dashboard provides insights into campaign performance, optimizes Ad spend, and improves decision-making.
+## INTRODUCTION
 
-DATASET OVERVIEW
-The dataset includes:
-•	Ad Spend
-•	Impressions
-•	Clicks
-•	Conversions
-•	Revenue
-•	Campaign Dates (Year, Month)
-•	Products
-•	Marketing Channel
-KPI’s(Key Performance Indicators)
-The following KPI’s were created as card visuals:
-•	Total Conversions
-•	Overall ROI (Return on Investment)
-•	Total Ad Spend
-•	Total Clicks
-•	Total Impressions
-•	Total Revenue
-CALCULATED DAX MEASURES
-•	Click Through Rate(CTR): It shows the percentage of users who clicked on a link compared to the total number of viewers.
-CTR(%)= Divide(SUM([Clicks]), SUM([Impressions]),0)*100
-•	Return On Investment(ROI): It shows the percentage of how much was made and how much was spent.
-ROI%=Divide[(SUM(Sheet1[Revenue(INR)])- SUM(Sheet1[Ad Spend(INR)]),SUM(Sheet1[Ad Spend(INR)]),0).
-•	Conversion Rate:
-The measure used for this:
-Conversion Rate= Divide(SUM(Sheet1[Conversions]),SUM(Sheet1[Clicks])). 
+ This project presents an end-to-end data analysis of the performance of marketing campaigns for Axia Digital Solutions. The objective was to evaluate the effectiveness of various marketing channels and provide actionable insights to improve decision-making and return on investment (ROI).
+An interactive dashboard was developed using Power BI to monitor key performance indicators (KPIs) such as conversions, revenue, impressions, and engagement across multiple channels.
 
-VISUALS INCLUDED
-•	Ad Spend by Channel(Clustered bar chart): Compares spend across channels.
-•	Clicks VS Impressions(Donut Chart):Measures engagement.
-•	Conversion rate by category(Clustered column chart): Shows product category efficiency.
-•	Revenue by Product(Clustered column chart): Identifies top products.
-•	ROI by products: Shows profits by the products.
-•	ROI by category: Shows profits by category.
-•	Time-based trends(Line Charts): Tracks conversions, clicks, spend, and ROI by month/year.
-INTERACTIVITY
-The dashboard includes slicers for:
-•	Year
-•	Month
-•	Product Name
-•	Category
-•	Marketing Channel, to enable filtering across all visuals.
+## OBJECTIVES
 
-INSIGHTS PROVIDED
-•	Top-performing products and categories.
-•	Seasonal trends in campaign performance.
-•	Ad Spend Efficiency
-•	Engagement Patterns  
+Analyze marketing performance across different channels (Email, Instagram Ads, Influencer Marketing)
+Measure campaign effectiveness using key metrics
+Identify high-performing and underperforming campaigns
+Provide data-driven recommendations for optimization
 
-CONCLUSION
-The dashboard helps Axia Digital Solutions see which campaigns work best, where money is well spent, and which areas need improvement. It gives clear insights that support smarter decisions and better marketing results.
+## TOOLS AND TECHNOLOGIES
 
+Power BI – Data visualization and dashboard creation
+Microsoft Excel – Data cleaning and preprocessing
+
+## DATASET DESCRIPTION
+
+The dataset includes the following key variables:
+Ad Spend
+Impressions
+Clicks
+Conversions
+Revenue
+Campaign Date (Year, Month)
+Marketing Channels
+
+## KEY PERFORMANCE INDICATORS (KPIs)
+
+The following metrics were created and analyzed:
+Total Conversions – Number of successful customer actions
+Total Clicks – Number of user interactions with campaigns
+Total Impressions – Total views of advertisements
+Total Revenue – Income generated from campaigns
+
+## CALCULATED METRICS:
+
+Click-Through Rate (CTR)
+Measures the percentage of users who clicked on an ad:
+CTR (%) = (Clicks / Impressions) * 100
+RETURN ON INVESTMENT (ROI)
+Evaluates campaign profitability:
+ROI (%) = (Revenue - Ad Spend) / Ad Spend
+Conversion Rate
+Percentage of users who completed a desired action:
+Conversion Rate (%) = (Conversions / Clicks) * 100
+
+## DASHBOARD FEATURES
+
+Interactive filters for time and campaign type
+Visual comparison of marketing channel performance
+KPI cards for a quick performance overview
+Trend analysis of revenue and engagement over time
+
+## KEY INSIGHTS
+
+High-performing campaigns generated significantly higher ROI with optimized ad spend
+Social media channels (e.g., Instagram Ads) showed strong engagement and click-through rates
+Certain campaigns had high impressions but low conversions, indicating inefficiencies in targeting or messaging
+Revenue trends revealed peak performance periods that can guide future campaign timing
+
+## RECOMMENDATIONS
+
+Allocate more budget to high-performing channels with strong ROI
+Optimize underperforming campaigns by improving targeting and content strategy
+Focus on increasing conversion rates rather than just impressions
+Leverage peak performance periods for future campaign planning
+
+## CONCLUSION
+
+This project demonstrates the use of data analytics and visualization tools to extract meaningful insights from marketing data. The findings provide a foundation for optimizing marketing strategies and improving overall campaign performance.
